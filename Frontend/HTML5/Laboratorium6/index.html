@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="AMdr" />
+    <title>ZAAWANSOWANE PROGRAMOWANIE WWW</title>
+    <link rel="shortcut icon" href="ikony/zeszyt.ico" />
+	<link href="style/styl1.css" rel="stylesheet" type="text/css" />
+    <script src="skrypty/nasluch.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <!--organizacja strony-->
+    <!--nagłówek-->
+    <header id="naglowek">
+		<p>
+			Podstawy JQuery
+			<a href="str1.html"><b>strona 1</b></a> |
+			<a href="str2.html"><b>strona 2</b></a> |
+			<a href="str3.html"><b>strona 3</b></a> |
+			<a href="str4.html"><b>strona 4</b></a> |
+			<a href="str5.html"><b>strona 5</b></a> |
+			<a href="str6.html"><b>strona 6</b></a> |
+		</p>
+    </header>
+    <!-- nawigacja -->
+    <nav id="nawigacja">
+        <div id="lewy">
+            <a href="#" id="kursor" onclick="event.preventDefault()" title="brak poprzedniej!">&lt;&lt;</a>
+        </div>
+        <div id="srodek">
+            <a href="index.html" title="strona główna">strona główna</a>
+        </div>
+        <div id="prawy">
+            <a href="str1.html" title="strona 1">&gt;&gt;</a>
+        </div>
+        <div class="clear"></div>
+    </nav>
+    <!-- zasadnicza zawartość-->
+    <section>
+        <header><h2>Strona główna</h2></header>
+        <article id="zawartosc">
+            <h3>Spis treści</h3>
+			<ul>
+		      <li><a href="str1.html"><b>Str. 1. jQuery na początek</b></a></li>
+		      <li><a href="str2.html"><b>Str. 2. Przykład nr 2 - biblioteka jQuery </b></a></li>
+		      <li><a href="str3.html"><b>Str. 3. Proszę wyklikac szachownice.</b></a></li>
+		      <li><a href="str4.html"><b>Str. 4. Przyklad ze zmiana zawartosci - uaktualnianie elementow</b></a></li>
+		      <li><a href="str5.html"><b>Str. 5. Zdarzenia, wlaczanie/wylaczanie nasluchiwaczy.</b></a></li>
+		      <li><a href="str6.html"><b>Str. 6. Chart.js </b></a></li>
+			</ul>
+
+        </article>
+    </section>
+
+    <!--stopka-->
+    <footer id="stopka">
+        <aside class="st-box-left">
+            Data i czas: <span id="clock"></span>
+            <br />
+            Aktualizacja: <span id="modyf"></span>
+        </aside>
+        <aside class="st-box-right">
+            <!-- walidatory -->
+            <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Poprawny CSS3!" />
+            </a>
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img src="ikony/html5.png" alt="Poprawny HTML5" />
+            </a>
+        </aside>
+        <div class="clear"></div>
+    </footer>
+</body>
+</html>

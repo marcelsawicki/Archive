@@ -1,0 +1,8 @@
+Zadanie laboratoryjne – lista 2 
+* Kolekcja danych – Stworzyæ w³asny model danych 
+– Stworzyæ kontroler dla kolekcjê danych z poprzedniego podpunktu 
+– Stworzyæ  odpowiednie widoki do manipulowania na stworzonej kolekcji danych. 
+* Szablon witryny WWW 
+– Zaprojektowaæ w³asny uk³ad (layout)  witryny WWW 
+– U¿yæ w nim sekcji nazwanych 
+– Zaprojektowaæ kilka stron z u¿yciem stworzonego uk³adu  

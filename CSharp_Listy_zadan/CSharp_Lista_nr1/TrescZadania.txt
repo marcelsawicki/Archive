@@ -1,0 +1,11 @@
+Zadanie laboratoryjne – lista 1 
+* Routing – Stworzyæ 3 w³asne strony w domyœlnym projekcie. 
+– Uzupe³niæ kontroler o odpowiednie akcje. 
+– Dodaæ skrócone URL do wchodzenia na te strony. 
+– Pobraæ z adresu URL dwie dane oraz umieœciæ je na stronie, np. /Osoba/Dodaj/Kowalski/46 wypisuje na stronie, ¿e Kowalski ma 46 lat.  
+– Adres /Oblicz/Dodaj/3,5 ma otwieraæ stronê z informacj¹, ¿e 3+5=8 itp. • MVC 
+– Stworzyæ w³asny model danych (najlepiej w tematyce proponowanej w pracy koñcowej) 
+– Uzupe³niæ go o odpowiednie annotacje 
+– Wygenerowaæ dla niego odpowiedni kontroler i zmodyfikowaæ zostawiaj¹c tylko mo¿liwoœæ tworzenia, edycji i prezentacji. 
+– Utworzyæ odpowiednie widoki 
+* Wszystko zadania z prezentacj¹ dzia³ania

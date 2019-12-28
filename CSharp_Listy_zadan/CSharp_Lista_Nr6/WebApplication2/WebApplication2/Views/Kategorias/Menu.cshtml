@@ -1,0 +1,60 @@
+﻿@model WebApplication2.Models.Kategoria
+
+@{ ViewBag.Title = "Menu";}
+<h2>Menu w/g kategorii</h2>
+
+<table>
+	<tbody>
+		<tr>
+			<td>Wybór kategorii i podkategorii</td>
+			<td>Artykuły</td>
+		</tr>
+		<tr>
+			<td>
+				<div>
+					<h4>Kategoria</h4>
+					<hr />
+					<dl class="dl-horizontal">
+						<dt> Powrót: </dt>
+						<dd>
+							@if (Model.NadKategoria != null)
+							{
+								@Html.ActionLink(Model.NadKategoria.Nazwa, "Menu", new { id = Model.NadKategoria.Id })
+							}
+						</dd>
+						<dt> Tu jesteś: </dt>
+						<dd>   @Html.DisplayFor(model => model.Nazwa) </dd>
+					</dl>
+					<p>  Podkategorie:  </p>
+					<hr />
+
+					<dl class="dl-horizontal">
+						@{ var nr = 1;}
+						@foreach (var item in Model.PodKategoria)
+						{
+							<dt> @(nr++) </dt>
+							<dd>
+								@Html.ActionLink(item.Nazwa, "Menu", new { id = item.Id })
+							</dd>
+						}
+					</dl>
+
+
+				</div>
+			</td>
+
+			<td>
+					<dl class="dl-horizontal">
+						@foreach (var item in Model.Towar)
+							{
+								<dd>
+									@item.Nazwa
+
+									@Html.ActionLink(item.Nazwa, "Details/"+item.Id, "Towars")
+								</dd>
+							}
+					</dl>
+			</td>
+		</tr>
+	</tbody>
+</table>

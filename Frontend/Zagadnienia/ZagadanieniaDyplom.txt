@@ -1,0 +1,482 @@
+Spis treści
+===========
+
+Wprowadzenie do technologii obiektowych
+1. Co to jest model, a co to jest meta-model? (**)
+2. Jak można przedstawiać modele systemów w języku UML?  (**)
+3. Jakich diagramów UML można użyć do przedstawienia statycznych, a jakich do 
+przedstawienia dynamicznych aspektów modelowanego systemu?
+4. Co to jest klasyfikator?
+5. Co to jest klasa? (**)
+6. Co to jest asocjacja? Jakie sa rodzaje asocjacji? (**)
+7. Co jest znaczeniem przypadków użycia?
+8. Co to jest maszyna stanowa i jak można ją przedstawiać w języku UML?
+9. Jakie związki zachodzą pomiędzy diagramami sekwencji a diagramami stanów?
+10. Co charakteryzuje stan obiektu?
+
+Programowanie WWW
+11. Charakterystyka i zastosowanie HTML 5.
+12. Osadzanie treści multimedialnych w dokumentach HTML 4 i HTML 5.
+13. Formularze w HTML 5. (**)
+14. Charakterystyka, zastosowanie i ograniczenia CSS2/CSS3.
+15. Selektory CSS (**)
+16. Pozycjonowanie obiektów w dokumentach HTML z wykorzystaniem CSS3. (**)
+17. Charakterystyka zastosowania JavaScript. (**)
+18. JavaScript - wyrażenia regularne. (**)
+19. JavaScript - rodzaje zdarzeń i schemat ich obsługi. (**)
+20. Funkcjoalność biblioteki jQuery.
+21. jQuery - wsparcie animacji. (**)
+
+Programowanie w języku JavaScript
+22. Klasy i obiekty w języku Java: rola, struktura, użycie w programie.
+23. Dziedziczenie, polimorfizm i interfejsy w języku Java. (**)
+24. Obsługa wejścia/wyjścia w Javie: podejście strumieniowe.
+25. Mechanizm wyjątków w Javie.
+26. Aplety w Javie.
+
+Bazy danych w aplikacjach webowych.
+27. Modele bazy danych. Schemat bazy danych. Więzy w bazach danych.
+28. Przetworzenie transakcyjne. Właciwości ACID transakcji. (**)
+29. System DBMS - podstawowe bloki funkcjonalne i widoki.
+30. Normalizacja schematów baz danych.
+31. Projektowanie i tworzenie baz danych - omówić wybrany designer i modeler.
+32. Charakterystyka języka SQL. Definiowanie schematu bazy danych w języku SQL. (**)
+33. Zapytania wybierające. Zapytania z grupowaniem. Podzapytania.
+34. Złączenia i zapytania złączeniowe w SQL. Typy złączeń. (**)
+
+Internetowe serwisy multimedialne
+35. Rodzaje oraz techniki konstruowania interakcji w multimedialnych serwisach internetowych.
+36. Testowanie multimedialnych komponentów prototypu internetowego serwisu multimedialnego.
+37. Animacja komputerowa 2d oraz 3d. Zagadnienia związane z umieszczaniem animacji na stronach 
+	internetowych. (**)
+38. Etapy konstruowania multimedialnej, interaktywnej aplikacji internetowej.
+
+Bezpieczeństwo sieci i aplikacji webowych
+40. Stos protokołów TCP/IP i jego bezpieczeństwo. (**)
+41. XSS. Ataki i zabezpieczenia.
+42. SQL Injection. Ataki i zabezpieczenia.
+43. Kryptografia symetryczna i asymetryczna - zastosowania. Certyfikacja i PKI.
+44. Mechanizmy bezpieczeństwa w przeglądarkach WWW. (**)
+45. Skanery systemów, sieci i aplikacji webowych - wymienić pięc sposród dziesięciu poznanych i 
+	scharakteryzować dwa. (**)
+46. Polityka bezpieczeństwa i audyt - charakterystyka wybranego narzędzia.
+47. Standardy i dobre praktyki bezpoieczeństwa informacji, systemów i sieci - wymienić cztery i
+	scharakteryzować dwa.
+	
+Serwery i serwisy internetowego
+48. Bezpieczne metody zdalnego dostępu i administrowania serwerami usług internetowych.
+49. Czym jest strefa w usłudze DNS? (**)
+50. Usługa DNS - zapytanie rekursywne vs. zapytanie iteracyjne. (**)
+51. Usługa FTP - tryb aktywny vs. tryb pasywny.
+53. W jaki sposób można skonfigurować serwery (witryny) wirtualne WWW na jednym serwerze fizycznym,
+	tzn. na podstawie jakich parametrów są one rozróżniane przez serwer fizyczny?
+	
+Aplikacje internetowe w środowisku .NET
+54. Kod ukryty (codebehind) - motywacje i zastosowanie.
+55. Bezstanowość protokołu HTTP, rozwiązania w ASP.NET.
+56. Bezpieczeństwo aplikcji ASP.NET.
+57. Sposoby przesyłania informacji między stronami ASP.NET. (**)
+58. Rodzaje i funkcje walidatorów w ASP.NET.
+59. Współpraca aplikacji ASP.NET z bazą danych. (**)
+
+Technologie XML
+60. Rodzaje technologii XML.
+61. XML - dokumenty poprawnie składniowo i strukturalnie.
+62. XML Schema - charakterystyki zastosowanie.
+63. Prezentacja zawartości dokumentów XML z wykorzstaniem CSS i/lub XSLT. (**)
+64. Charakterystyka zastosowania XPath.
+65. Charakterystyka i zastosowania XSLT.
+66. Praca z formatem XML na platformie .NET. (**)
+	(Charakterystyka klas wspierjących programowe przetwarzanie dokumentów XML.)
+	
+Opracowanie
+===========
+
+Ad. 1. Co to jest model, a co to jest meta-model?
+Model to "układ (...) możliwie mało skomplikowany, działający analogicznie do orginału".
+
+Meta-model - model definiujący składnię, semantykę i pragmatykę wprowadzonego modelu, notacji
+			 lub diagramu. Meta-model proponowany przez autorów UML ustala pewne elementy składni
+			 diagramów, ograniczenia typologiczne, klasyfikację pojęć oraz związki pomiędzy pojęciami.
+			 
+UML definiuje dwie podstawowe składowe, notacje poszczególnych elementów używanych na diagramach, a 
+z drugiej strony ich semantykę, czyli tzw. meta-model.
+
+Z punktu widzenia analityka istotniejsze jest czytelne i jednoznaczne opisanie modelu tak, aby inne
+osoby mogły zrozumieć jego znaczenie. Zatem ważniejsza dla niego jest notacja, zaś meta-model powinien
+być zrozumiały intuicyjnie.
+
+Metamodelowanie – analiza, konstrukcja i rozwój ram, reguł, ograniczeń, modeli i teorii, które są użyteczne przy procesie modelowania w pre-definiowanej grupie problemów. Metamodelowanie wraz z metamodelami występuje w wielu dziedzinach wiedzy, np. w metanauce, metafilozofii, metateorii czy też w teorii systemów. Termin ten występuje również w matematyce oraz często spotykany jest w informatyce.
+
+W informatyce i dziedzinach jej pokrewnych metamodelowanie oznacza konstruowanie zbioru "koncepcji" (obiektów, terminów, itp.) w zakresie pewnej dziedziny. Uznając model za abstrakcję pewnego zjawiska ze świata rzeczywistego, to metamodel jest abstrakcją ukazującą właściwości owego modelu. Przykładem takiej zależności może być program komputerowy napisany w pewnym języku programowania oraz gramatyka owego języka programowania.
+
+Metamodele w informatyce najczęściej stosowane są jako:
+
+schematy logiczne dla danych semantycznych, które muszą być wymieniane bądź przechowywane,
+język wspierający określoną metodę bądź proces,
+język służący do ogólnego wyrażania semantyki pewnych informacji.
+
+Ad 2. Jak można przedstawiać modele systemów w języku UML?  (**)
+	Diagramy: przypadków użycia, klas, obiektów, maszyny stanowej, sekwencji.
+
+Ad 5. Co to jest klasa? (**)	
+	Klasy - grupa obiektó o tych samych właściwościach, ograniczeniach i semantyce - deskryptor
+			grupy obiektów o podobnej strukturze, zachowaniu i relacjach. Do własności klasy zaliczamy
+			atrybuty i operacje.
+			
+			Wewnętrzne właściwości klasy:
+			atrybuty - własność typu strukturalnego
+			operacje - własność typu behawioralnego
+			
+	Klasa - opis zbioru (uniwersum) obiektów (instancji) posiadających te same atrybuty, operacje,
+			metody i zachowania.
+			
+	Zewnętrzne właściwości klasy: asocjacje z innymi klasami.
+
+Ad 6. Co to jest asocjacja? Jakie sa rodzaje asocjacji? (**)
+	Asocajacja - wskazuje na trwałe powiązanie pomiędzy obiektami danych klas 
+				 (np. firma zatrudnia pracowników). Na diagrami asocjację oznacza się
+				 za pomocą lini, która może być zakończona strzałką (oznaczającą kierunek
+				 nawigacji między klasami). Nazwę cechy wraz z krotnością umieszcza się w 
+				 punkcie docelowym asocjacji.
+				 
+
+Ad 13. Formularze w HTML 5. (**)
+		Jest 6 typów pól:
+		1) <input type="text"> </input>
+		2) <input type="checkbox"> </input>
+		3) <input type="radio"> </input>
+		4) <input type="file"> </input>
+		5) <textarea> </textarea>
+		6) <input type="hidden"> </input>
+		
+		W HTML5 mamy dodatkowo do dyspozycji:
+		7) <input type="email"> </input>
+		8) <input type="url"> </input>
+		9) <input type="number"> </input>
+		10) <input type="number" min="1" max="120" /> </input>
+		11) <input type="date"> </input>
+		12) <input type="time"> </input>
+		
+Sprawdzanie poprawności danych: 
+Wcześniej mieliśmy jedynie atrybut "maxlength", który służy do ograniczenia
+długości tekstu wprowadzonego w pole tekstowe.
+W HTML5 wprowadzono atrybut "required", dzięki któremu możemy wymóc na użytkowniku
+wypełnienie lub zaznaczenia pola:
+	<input type="email" required />
+	- w ten sposób upewniamy się, że użytkownik poda nam adres e-mail.
+
+Ad 15. Selektory CSS (**)
+
+	Każda definicja stylu CSS (ang. Cascading Style Sheets) posiada dwa komponenty i selektor
+	(definiuje znaczniki, których dotyczyć będzie styl) oraz właściwości (określają dziłanie stylu).
+	
+	Przykład 4.
+	
+	h1, h2 {
+		font-family: sans-serif;
+		colr: #3366CC;
+	}
+	
+	W przykładzie selektor miał wartość h1, h2 co oznacza, że styl dotyczy wszystkich znaczników
+	<h1> i <h2>. Pozostała część definicji stylu określa atrybuty, które w tym przypadku dotyczyły
+	czcionki i koloru tekstu.
+	
+	Selektor znaczników:
+		Podając nazwę określonego znacznika HTML jako selektor tego znacznika, można zastosować 
+	definicję stylu do każdego wystąpienia tego znacznika w dokumencie. Tę praktykę często stosuje
+	się do zdefiniowana podstawowych stylów wykorzstywanych na całej witrynie. Na przykład poniższy
+	styl może zostać użyty do określenia domyślnej czcionki witryny:
+	
+	Przykład 5.
+	
+	body, p. td, th, div, blockquote, dl, ul, ol {
+		font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #000000;
+	}
+	
+	Stosunkowo długi selektor to lista znaczników, których dotyczyć będzie definicja stylu
+	(krój, rozmiar, kolor czciconki). Teoretycznie wystarczyłby znacznik <body> (ponieważ
+	wszystkie inne znaczniki występują w obrembie tego znacznika, przez co dziedziczą jego
+	właściwości), jednak wiele przeglądarek nie przenosi poprawnie właściwości styli do 
+	tabeli i innych elementów. Dlatego w skład powyższego selektora wchodzą także pozostałe
+	znaczniki.
+	
+	Selektor pseudoklas:
+		Formatowanie znacznika <a> w HTML jest bardziej rozbudowane niż większość innych
+	znaczników. Określając w znaczniku <body> atrybut link, vlink, alink, można zdefiniować
+	zestaw kolorów odpowiadającym poszczególnym stronom łącza na stronie internetowej
+	(odpowiednio: nieodwiedzone, odwiedzone i kliknięte). Również w CSS możliwe jest formatowanie
+	tego znacznika, przy czym dodany został czwarty stan łącza, który odpowiada wskazaniu go 
+	kursorem myszki.
+	
+	Przykład 6.
+	
+	a: link { color: #0000FF; }
+	a: visited { color: #FF00FF; }
+	a: hover { color: #00CCFF; }
+	a: active { color: #FF0000; }
+	
+	Powyższy przykład zawiera cztery definicje stylów CSS. Każdy z selektorów wykorzystuje 
+	tzw. pseudoklasę znacznika <a>.
+	
+	Selektory klas:
+		Jak przypisać różne style do tych samych znaczników pojawiających się w różnych miejscach
+	dokumentu?
+	
+	Można dokonać tego za pomocą klas:
+	
+	Przykład 7.
+	
+	.pasek { color: #FFFFFF; }
+	
+	<p class="pasek"> tekst </p>
+	
+	Selektory id:
+	
+	Przykład 8.
+	
+	#wybrany { color: yellow; }
+	
+	<span id="wybrany"> tekst </span>
+	
+
+Ad 16. Pozycjonowanie obiektów w dokumentach HTML z wykorzystaniem CSS3. (**)
+
+Ad 17. Charakterystyka zastosowania JavaScript. (**)
+		JavaScript, JS - skryptowy język programowania stworzony przez firmę Netscape,
+		najczęściej stosowany na stronach intrnetowych (WWW).
+		
+		Skrypty służą najczęściej do zapewnienia interaktywności poprzez reagowanie na zdarzenia.
+		
+		Przykład 1.
+		
+		<!DOCTYPE html>
+		<HTML>
+			<HEAD>
+				<script type="text/javascript">
+					function hello() {
+						var dt = Date();
+						
+						var msg = 'Witaj świecie! Dzisiaj jest ' +dt;
+						alert(msg);
+					}
+				</script>
+			</HEAD>
+			
+			<BODY onload="hello();">
+			</BODY>
+		</HTML>
+		
+	Zastosowanie JavaScript:
+		1) sprawdzenie poprawności pól formularza
+		2) ustalanie i pobieranie cookies
+		3) dynamiczne zmienianie wyglądu strony
+		4) ukrywanie i pokazywanie elementów
+		5) przemieszczanie elementów na stronie
+		6) przechwytywanie zdarzeń użytkownika i dostosowanie do nich strony
+		7) przewijanie zawartości
+		8) połączenie z aplikacją po stronie serwera bez opuszczania strony
+		
+Ad 18. JavaScript - wyrażenia regularne. (**)
+
+Ad 19. JavaScript - rodzaje zdarzeń i schemat ich obsługi. (**)
+		Zdarzenia to czynności, które użykownik wykonuje podczas odwiedzania naszej strony.
+		Przykładowymi zdarzeniami mogą być np. przesunięcie kursora na obrazek,
+		kliknięcie jakiegoś linka, wysłanie formularza, zaznaczenie jakiegoś obiektu,
+		naciśnięcie klawisza.
+		
+		onAbort - gdy zaniechano ładowanie strony
+		onBlur - gdy obiekt przestał być aktywny
+		onDblClick - gdy podwójnie klikamy na obiekt
+		onChanege - gdy obiekt zmienił swoją wartość
+		onClick - gdy obiekt został kliknięty
+		onError - gdy wystąpił błąd w skrypcie
+		onFocus - gdy obiekt stał się aktywny (został wybrany)
+		onKeyDown - występuje naciśnięcie klawisza na klawiaturze
+		onKeyUp - gdy puścimy klawisz na klawiaturze
+		onLoad - gdy obiekt został załadowany
+		onMouseOver - gdy kursor znalazł się na obiekcie
+		onMouseOut - gdy kursor opuścił obiekt
+		onSelect - gdy zawartość obiektu została zaznaczona
+		onSubmit - gdy formularz został wysłany
+		onUnload - gdy zmieniono wyświetlaną stronę
+		
+		Przykład 2.
+		<HTML>
+			<HEAD>
+			<script type="text/javascript">
+			
+			function init() {
+					document.getElementById("id_of_textbox").addEventListener("keyup", function(event) {
+						event.preventDefault();
+						if (event.keyCode === 13) {
+							document.getElementById("id_of_button").click();
+						}
+					});
+			}
+
+				function sayHello() {
+					alert("Hello!");
+				}
+			</script>
+			</HEAD>
+			<BODY onload="init();">
+				<input id="id_of_textbox" type="text"></input>
+				<button id="id_of_button" onclick="sayHello();">Start</button>
+			</BODY>
+		</HTML>
+
+Ad 21. jQuery - wsparcie animacji. (**)
+	W przypadku animacji jQuery zmieniane są wartości parametrów CSS w krótkich odstępach czasu (przez co
+	uzyskyjemy efekt animacji).
+	
+	jQuery udostępnia kilka ciekawych efektów gotowych do użycia:
+	
+	show(szybkość, funkcja zwrotna) - pokazanie obiektu
+	hide(szybkość, funkcja zwrotna) - ukrywanie obiektu
+	fadeIn(szybkość, funkcja zwrotna) - płynna pojawienie się obiektu
+	
+	toggle() - funkcja pokazuje lub ukrywa obiekt w zależności od danego stanu
+	fadeOut(szybkość, funkcja zwrotna) - płynne ukrywanie obiektu
+	fadeTo(szybkość, przezroczystość, funkcja zwrotna) - płynne ustawienie przezroczystości do poziomu
+														 parametru przezroczystość
+	slideDown(szybkość, funkcja zwrotna) - płynne zsunięcie obiektu w dół
+	slideUp(szybkść, funkcja zwrotna) - płynne zsunięcie obiektu w górę
+	slideToggle(szybkość, funkcja zwrotna) - płynne zsunięcie obiektu w górę lub w dół w zależności od aktualnego
+											 stanu
+	
+	Są to standardowe efekty jQuery i w wiekszości przypadków wystarczają do naszych zastosowań.
+	
+	Chcąc zrobić własną animacje możemy użyć metody animate(animowane właściwości, czas, rodzaj animacji, funkcja
+	zwrotna).
+	
+	Przykład 9.
+	
+	$('#go').click(function() { 
+								$('#block').animate({
+									width: "500px",
+									opacity: 0.4,
+									marginLeft: "0.6in",
+									fontSize: "3em",
+									borderWidth: "10px"
+								}, 1500); 
+							});
+
+Ad 23. Dziedziczenie, polimorfizm i interfejsy w języku Java. (**)
+	Dziedziczenie to podostawowy mechanizm programowania obiektowego. Dzięki niemu możemy utworzyć
+	spójną i łatwą do zrozumienia hierarchię klas, a to uczyni nasz kod bardziej przejrzystym i
+	bardziej podatnym na późniejsze modyfikacje.
+
+Ad 28. Przetworzenie transakcyjne. Właciwości ACID transakcji. (**)
+		Transakcje są grupami instrukcji języka SQL, traktowanymi z punktu widzenia ich
+	przetwarzania jako jedną całość. Transakcje gwarantują spójność modyfikowanych informacji.
+	
+	Przykład:
+	
+		Typowym przykładem transakcyjnego przetwarzania danych jest przeniesienie pieniędzy zIndex
+	jednego konta bankowego na drugie.
+	
+	Taka operacja przebiega w dwóch etapach:
+		1) zmniejszenie o pewną sumę pieniędzy stanu konta X
+		2) dodanie tej sumy do stanu konta Y
+		
+	Gdyby po wykonia pierwszej operacji wystąpił błąd uniemożliwiający wykonanie drugiej,
+	z systemu zniknęłaby pewna suma pieniędzy. Równie nieprzyjemnym zaskoczeniem dla właściciela
+	byłoby sprawdzenie przez niego stanu obu jego kont już po odjęciu danej sumy z pierwszego
+	konta, ale przed jej dodaniem do drugiego konta.
+	
+	Właściwości ACID transakcji:
+	
+	Zgodnie z zasadą ACID (ang. Atomicity, Consistency, Isolation, Durability) transakcje muszą być:
+	
+	1) Atomicity - niepodzielne
+		Niepodzielność oznacza, że zatwierdzane są wszystkie wchodzące w skład transakcji instrukcje
+		albo nie jest zatwierdzana żadna z nich. Innymi słowy, wszystkie wchodzące w skład transakcje
+		muszą być wykonane poprawnie - jeśli choć jedna z nich zgłosci błąd, wszystkie przeprowadzone
+		w ramach transakcji zmiany zostaną wycofane.
+	
+	2) Consistency - spójne
+		Cehca ta gwarantuje, że ich wykonanie nie doprowadzi, nawet w przypadku awarii serwera,
+		do utraty spójności danych. Wszystkie zmiany danych wykonywane są w ramach transakcji,
+		przechowywane w bazach informacji zawsze będą spójne.
+		
+	3) Isolation - izolowane
+		Izolowanie transakcji wymaga albo zablokowania danych modyfikowanych w ramach jednej z nich,
+		albo utworznia dodatkowej wersji danych.
+		
+	4) Durability - trwałe
+		Trwałośc transakcji gwarantuje, że efekty zatwierdzonych transakcji będą zapisywane w bazie,
+		nawet w przypadku awarii serwera SQL. Do przywrócenia spójności danych serwery bazodanowe
+		z reguły używają jakiejś formy dziennika transakcyjnego.
+		
+Ad 32. Charakterystyka języka SQL. Definiowanie schematu bazy danych w języku SQL. (**)
+		SQL (ang. Structured Query Language) - strukturalny język zapytań używany do tworzenia,
+		modyfikowania baz danych oraz do umieszczania i pobierania danych z baz danych.
+		
+		Przykład 3.
+		
+		CREATE TABLE Pracownicy
+		(
+			Imie VARCHAR(255),
+			Nazwisko VARCHAR(255),
+			Pensja FLOAT,
+			Staz INT
+		);
+
+Ad 34. Złączenia i zapytania złączeniowe w SQL. Typy złączeń. (**)
+
+Ad 37. Animacja komputerowa 2d oraz 3d. Zagadnienia związane z umieszczaniem animacji na stronach 
+	internetowych. (**)
+	
+Ad 40. Stos protokołów TCP/IP i jego bezpieczeństwo. (**)
+	   TCP (ang. Transmission Control Protocol)- jest to połączeniowy, 
+	   niezawodny protokół transportowy. Zapewnia on wiarygodne połączenie realizowane 
+	   za pomocą sum kontrolnych oraz numerów sekwncyjnych pakietów. Jeżeli jakikolwiek 
+	   pakiet został po drodze zniszczony lub zginął, komputer docelowy zgłasza potrzebę 
+	   retransmisji. TCP gwarantuje zatem dostarczenie pakietów.
+	   
+	   #Stos
+	   #Bezpieczeństwo
+	   
+Ad 44. Mechanizmy bezpieczeństwa w przeglądarkach WWW. (**)
+
+Ad 45. Skanery systemów, sieci i aplikacji webowych - wymienić pięc sposród dziesięciu poznanych i 
+	scharakteryzować dwa. (**)
+	Fiddler
+	Acunetix
+	Nessus
+	Netsparker
+	Webcruser
+	Milescan
+	Skipfish
+	
+Ad 49. Czym jest strefa w usłudze DNS? (**)
+	Strefa jest miejscem w drzewie DNS, do którego można się odwołać (delegator point). Zawiera wszystkie
+	nazwy począwszy od pewnego węzła i dalej idąc w dół drzewa, za wyjątkiem tych węzłów które już są w 
+	innej strefie.
+	
+	Strefa może dać się mapować do dokładnie jednej domeny, może też zawierać tylko jej wycinek. Prowadzi to
+	do stwierdzenia, że każda nazwa w drzewie DNS jest poddomeną, nawet jeżeli ona sama nie posiada poddomeny.
+
+Ad 50. Usługa DNS - zapytanie rekursywne vs. zapytanie iteracyjne. (**)
+	Rekursywnie - tj. rekurencyjnie, zmusza serwer do znalezienia wymaganej informacji lub zwrócenia wiadomości
+				  o błędzie.
+
+Ad 57. Sposoby przesyłania informacji między stronami ASP.NET. (**)
+		GET - przesyłanie informacji w adresie, możliwośc podlinkowania. 
+			- małe porcje danych widoczne dla użytkownika
+			- adres strony jest "zaśmiecony"
+		POST - nie wyświetla danych w adrsie
+			 - niemal nieograniczony rozmiar pakietu (nawet całe pliki)
+			 - brak możliwości podlinkowania
+		
+Ad 59. Współpraca aplikacji ASP.NET z bazą danych. (**)
+		Entity Framework
+		język zapytań LINQ
+		
+Ad 63. Prezentacja zawartości dokumentów XML z wykorzstaniem CSS i/lub XSLT. (**)
+
+Ad 66. Praca z formatem XML na platformie .NET. (**)
+	(Charakterystyka klas wspierjących programowe przetwarzanie dokumentów XML.)

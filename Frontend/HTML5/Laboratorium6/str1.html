@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="AMdr" />
+	<title>ZAAWANSOWANE PROGRAMOWANIE WWW</title>
+	<link rel="shortcut icon" href="ikony/zeszyt.ico" />
+	<link href="style/styl1.css" rel="stylesheet" type="text/css" />
+	<script src="skrypty/nasluch.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- zdefiniować styl elementów na str. 1-->
+	<style>
+        .klasaNag {
+            color: white;
+            background-color:red;
+        }
+        .klasaB{
+            color: yellow;
+            background-color:blue;
+        }
+        .klasaG{
+            color: pink;
+            background-color: papayawhip;
+        }
+	</style>
+</head>
+<body>
+	<!--organizacja strony-->
+	<!--nagłówek-->
+	<header id="naglowek">
+		<p>
+			Podstawy JQuery
+			<a href="str1.html"><b>strona 1</b></a> |
+			<a href="str2.html"><b>strona 2</b></a> |
+			<a href="str3.html"><b>strona 3</b></a> |
+			<a href="str4.html"><b>strona 4</b></a> |
+			<a href="str5.html"><b>strona 5</b></a> |
+			<a href="str6.html"><b>strona 6</b></a> |
+		</p>
+	</header>
+	<!-- nawigacja -->
+	<nav id="nawigacja">
+		<div id="lewy">
+			<a href="index.html" title="strona główna">&lt;&lt;</a>
+		</div>
+		<div id="srodek">
+			<a href="index.html" title="strona główna">strona główna</a>
+		</div>
+		<div id="prawy">
+			<a href="str2.html" title="strona 2">&gt;&gt;</a>
+		</div>
+		<div class="clear"></div>
+	</nav>
+	<!-- zasadnicza zawartość-->
+	<section>
+		<header><h2>Str. 1. jQuery na początek </h2></header>
+		<div>
+            <input type="button" id="prze" value="Przeladuj"/>
+        </div>
+        <div id="demo">
+            <h1 id="header">Lista</h1>
+            <h2 id="artyk">Koty</h2>
+			<h3>Ja takze znikne!</h3>
+            <ul style="width: 50%;">
+                <li id= "jeden" class="klasaB">dachowce</li>
+                <li id="dwa" class="klasaG">perskie</li>
+                <li id="trzy" class="klasaB">syjamskie</li>
+                <li id="cztery" class="klasaNag">rosyjskie</li>
+            </ul>
+        </div>
+		<p>
+			Jesli najedziemy na tabele kursorem, zacznie ona znikac.
+		</p>
+		<p>
+			W tabeli dodano kolor tla za pomoca biblioteki jQuery. Zniknie takze header.
+		</p>
+        <table border="1">
+            <tr><td>koty dachowce</td></tr>
+            <tr><td>koty perskie</td></tr>
+            <tr><td>koty syjamskie</td></tr>
+            <tr><td>koty rosyjskie</td></tr>
+        </table>
+        <script>
+            $("tr:odd").css("background-color", "red");
+            $("*:header").fadeOut(5000);
+
+            $('table').mouseover(function () {
+                $(this).fadeOut(3000);
+            })
+        </script>  
+	</section>
+    
+	<!--stopka-->
+	<footer id="stopka">
+		<aside class="st-box-left">
+			Data i czas: <span id="clock"></span>
+			<br />
+			Aktualizacja: <span id="modyf"></span>
+		</aside>
+		<aside class="st-box-right">
+			<!-- walidatory -->
+			<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+				<img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Poprawny CSS3!" />
+			</a>
+			<a href="http://validator.w3.org/check?uri=referer">
+				<img src="ikony/html5.png" alt="Poprawny HTML5" />
+			</a>
+		</aside>
+		<div class="clear"></div>
+	</footer>
+</body>
+</html>

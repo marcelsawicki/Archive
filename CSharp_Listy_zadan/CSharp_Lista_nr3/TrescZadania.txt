@@ -1,0 +1,10 @@
+Zadanie domowe Klasa Towar - w³aœciwoœci 
+* Stworzyæ klasê Towar z wybranymi polami/w³asnoœciami: nazwa, cena netto, typ, iloœæ w magazynie. 
+* Dopisaæ kilka konstruktorów. 
+* Stworzyæ w³asnoœæ cena brutto, która w dzia³aniu przelicza siê na cenê netto (ale bez tworzenie pola do ceny netto, zak³adamy jedn¹ stawkê VAT) 
+* Dopisaæ metodê ToString() i zademonstrowaæ dzia³anie klasy: w³asnoœci, konstruktorów, inicjalizatorów. Parametry metod: 
+* Stworzyæ metodê Swap(…) zamieniaj¹c¹ dwie liczby ca³kowite wartoœciami: 
+int a=5; int b=10; swap(a,b); // nie do koñca poprawna linia 
+// a i b zamieni³y siê wartoœciami 
+* Stworzyæ metodê Average(…), która zwraca œredni¹ z wielu liczb typu double podawanych w parametrach. 
+Mo¿e przyj¹æ dowoln¹ liczbê parametrów: Average(1,2.3,6,7,9,10);

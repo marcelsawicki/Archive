@@ -1,0 +1,49 @@
+<div>
+Title: {{ quiz.title }}
+<hr />
+<div v-for="(question, index) in quiz.questions">
+      <!-- Hide all questions, show only the one with index === to current question index -->
+      <div v-show="index === questionIndex">
+        <h2>{{ question.text }}</h2>
+        <ol>
+          <li v-for="response in question.responses">
+
+              <!-- The radio button has three new directives -->
+              <!-- v-bind:value sets "value" to "true" if the response is correct -->
+              <!-- v-bind:name sets "name" to question index to group answers by question -->
+              <!-- v-model creates binding with userResponses -->
+              <!-- <input type="radio" 
+              v-bind:value="response.correct" 
+              v-bind:name="index" 
+              v-model="userResponses[index]"/> {{response.text}} -->
+
+              <input type="radio"
+              v-bind:value="response.correct"
+              v-bind:name="response.id"
+              v-bind:id="response.id"
+              v-model="userResponses[index]" /> {{response.text}}
+
+          </li>
+        </ol>
+        <!-- The two navigation buttons -->
+        <!-- Note: prev is hidden on first question -->
+        <button v-if="questionIndex > 0" v-on:click="Prev">
+          prev
+        </button>
+        <button v-on:click="Next">
+          next
+        </button>
+      </div>
+    </div>
+
+ <div v-show="questionIndex === quiz.questions.length">
+      <h2>
+      Quiz finished
+    </h2>
+
+      <p>
+        Total score: {{ Score() }} / {{ quiz.questions.length }}
+      </p>
+</div>
+
+</div>

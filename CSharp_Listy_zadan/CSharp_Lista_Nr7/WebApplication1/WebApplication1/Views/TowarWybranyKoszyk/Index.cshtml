@@ -1,0 +1,21 @@
+﻿@model WebApplication1.Models.TowarWybranyKoszyk
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@{ var i = 0; }
+
+@foreach (var item in Model.Towary)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Towar.Nazwa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ilosc)
+        </td>
+    </tr>
+    i++;
+}
+

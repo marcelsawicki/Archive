@@ -1,0 +1,42 @@
+<head>
+	<meta charset="UTF-8">
+	<title> Document </title>
+</head>
+<body>
+
+<!-- this is my View -->
+<div id="app">
+	<h1>{{ message }}</h1>
+	<ul id="example-1">
+		<li v-for="item in items">
+			{{ item.message }}
+		</li>
+	</ul>
+		<button v-on:click="greet">Greet</button>
+</div>
+
+<script src="https://unpkg.com/vue@2.1.3/dist/vue.js"></script>
+
+<script>
+<!-- this is my Model -->
+	var data = {
+		message: 'Hello World',
+		items: [
+			{ message: 'Foo' },
+			{ message: 'Bar' }
+			]
+	};
+	
+	var sayHello = function (event) { alert('Hello!'); };
+	
+<!-- this is my ViewModel, VM --> 
+	new Vue({
+		el: '#app',
+		data: data,
+		methods: {
+		greet: sayHello
+		}
+	});
+
+</script>
+</body>

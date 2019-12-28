@@ -1,0 +1,13 @@
+var howLong = 10;
+for (let i = 0, p = Promise.resolve(); i < howLong; i++) {
+    p = p.then(_ => new Promise(resolve =>
+        setTimeout(function () {
+            console.log(i);
+            resolve();
+			if(i>=(howLong-1))
+			{
+				console.log("Completed");
+			}
+        }, Math.random() * 1000)
+    ));
+}

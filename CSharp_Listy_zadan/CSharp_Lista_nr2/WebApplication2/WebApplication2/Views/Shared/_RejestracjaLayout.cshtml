@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    <style>
+        .pasekGorny {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            text-align: center;
+            background-color: cornflowerblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .pasekDolny {
+            background-color: yellowgreen;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            text-align: center;
+        }
+        .trescStrony 
+        {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pasekGorny">
+        @RenderSection("PasekGorny", required: false)
+    </div>
+    <div class="trescStrony">
+        @RenderBody()
+    </div>
+    <footer class="pasekDolny">
+        @RenderSection("PasekDolny", required: false)
+    </footer>
+
+</body>
+</html>

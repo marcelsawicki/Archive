@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+    <title>Znajdź ukryty skarb!</title>
+</head>
+
+<body>
+    <h1 id="nagłówek">Znajdź ukryty skarb!</h1>
+
+    <img id="mapa" width=400 height=400 src="http://nostarch.com/images/treasuremap.png">
+
+    <p id="odległość"></p>
+
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+    <script>
+// Wylosuj liczbę z przedziału od 0 do wartość zmiennej rozmiar minus 1
+var uzyskajLosowąLiczbę = function (rozmiar) {
+return Math.floor(Math.random() * rozmiar);
+};
+// Oblicz odległość między kliknięciem a celem
+var obliczOdległość = function (zdarzenie, cel) {
+var diffX = zdarzenie.offsetX - cel.x;
+var diffY = zdarzenie.offsetY - cel.y;
+return Math.sqrt((diffX * diffX) + (diffY * diffY));
+};
+// Uzyskaj łańcuch reprezentujący odległość
+var skonstruujPodpowiedź = function (odległość) {
+if (odległość < 10) {
+return "Parzy!";
+} else if (odległość < 20) {
+return "Gorąco";
+} else if (odległość < 40) {
+return "Ciepło";
+} else if (odległość < 80) {
+return "Letnio";
+} else if (odległość < 160) {
+return "Zimno";
+} else if (odległość < 320) {
+return "Mróz";
+} else {
+return "Syberia!";
+}
+};
+// Ustawiamy nasze zmienne
+var szerokość = 400;
+var wysokość = 400;
+var kliknięcia = 0;
+// Wylosuj miejsce ukrycia skarbu
+var cel = {
+x: uzyskajLosowąLiczbę(szerokość),
+y: uzyskajLosowąLiczbę(wysokość)
+};
+// Skojarz funkcję obsługi kliknięcia z elementem img
+$("#mapa").click(function (zdarzenie) {
+kliknięcia++;
+// Oblicz odległość między kliknięciem (zdarzeniem) a celem (skarbem)
+var odległość = obliczOdległość(zdarzenie, cel);
+// Na podstawie odległości wybierz podpowiedź
+var podpowiedź = skonstruujPodpowiedź(odległość);
+// Zaktualizuj element #odległość nowym tekstem podpowiedzi
+$("#odległość").text(podpowiedź);
+// Jeśli kliknięcie było dostatecznie blisko, poinformuj o wygranej
+if (odległość < 8) {
+alert("Skarb został znaleziony po " + kliknięcia + " klinięciach!");
+}
+});
+    </script>
+</body>
+</html>

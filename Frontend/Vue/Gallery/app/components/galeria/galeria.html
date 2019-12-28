@@ -1,0 +1,9 @@
+<div>
+    <button id="previous" @click="doPrevious()"> Previous </button>
+    <button id="next" @click="doNext()"> Next </button>
+    <br />
+    {{this.nrPicture}}
+    <br />
+    <img :src='getSource()'> <br />
+
+</div>
