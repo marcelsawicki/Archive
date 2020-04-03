@@ -1,0 +1,3 @@
+Zadanie 20.
+
+Azure function zmienia stan dokumentów.

@@ -1,0 +1,8 @@
+Zadanie 5.
+
+Wyrenderować na stronie SharePoint kontrolkę Kendo Grid oraz Kendo DropDownList.
+
+W kontrolce Kendo Grid dodać dodatkową kolumnę "Test1" oraz za pomocą event'a "dataBounding" dodać dane do tej kolumny.
+
+W kontrolce DropDownList wyrenderowac możliwe do wyboru itemy pobrane z listy SharePoint "DropDownListConfiguration".
+

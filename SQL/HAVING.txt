@@ -1,0 +1,6 @@
+SELECT C.Name, COUNT(*) AS Liczba, AVG(ListPrice) AS Srednia
+FROM [SalesLT].[Product] AS P
+JOIN [SalesLT].[ProductCategory] AS C
+	ON P.ProductCategoryID=C.ProductCategoryID
+GROUP BY C.Name
+HAVING COUNT(*)>10

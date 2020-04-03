@@ -1,0 +1,8 @@
+Zadanie 33.
+
+W DropDownList mamy do wyboru walute EUR lub USD.
+Po wybraniu renderuje sie wykres z kursem walut.
+Kurs walut jest prezentowany w Kendo Grid:
+Waluta; Data; Cena;
+
+Dane o kursie walut sa umieszczone na liscie SharePoint.

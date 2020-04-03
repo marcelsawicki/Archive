@@ -1,0 +1,8 @@
+Zadanie 18. Sklep
+
+	Napisac aplikacje sklep internetowy. Dane o wybranych towarach przechowywane w koszyku za pomoca SessionStorage.
+Logowanie i dane uzytkownika na podstawie danych o uzytkowniku SharePoint. 
+Dane o artykulach oferowanych przez sklep znajduja sie na liscie SharePoint.
+
+Zlozenie zamówienia może odbywać sie przy uzyciu Azure function.
+

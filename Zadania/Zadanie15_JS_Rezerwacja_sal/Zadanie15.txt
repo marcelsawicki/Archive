@@ -1,0 +1,10 @@
+Zadanie 15.
+
+Pobrać rzut piętra z 'Picture Library'. 
+Napisać funkcjonalnośc która będzie prezentowała które pokoje są wolne w określonym przedziale czasowym. 
+Jeśli pomieszczenie jest zarezerwowane to jest oznaczone kolorem czerwonym.
+
+Przedziały czasowe związane z rezerwacją są przechowywane na liście SharePoint.
+Przedział czasowy jest zdefinowany w następujący sposób:
+Kto zarezerwował salę, Data rezerwacji, Godzina rozpoczęcia rezerwacji, Godzina zakończenia rezerwacji 
+- można zarezerwować tylko na jeden dzień, ale na więcej niż 1h.

@@ -1,0 +1,10 @@
+Zadanie 8
+
+	Napisać program (w języku C#) tworzacy postac iloczynowa trójmianu kwadratowego.
+
+Czego potrzebujesz do utworzenia postaci iloczynowej trójmianu kwadratowego?
+
+Współczynnika – a
+Pierwiastków(miejsc zerowych) trójmianu kwadratowego
+
+[zadania_postac_iloczynowa_001.png]

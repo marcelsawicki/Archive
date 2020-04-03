@@ -1,0 +1,16 @@
+w evencie dataBinding ustawiam brak point lub dopisuje debugger.
+Mogę wywoływać wtedy polecenia w konsoli:
+
+e
+e.items.length
+e.items[1]
+
+e.items.at(1)
+
+Array.isArray(e.items)
+
+e.items[0].get('CompanyName')
+
+e.items[0].set('Test1', 'abc')
+
+e.items[3].Test1 = 'xyz'

@@ -1,0 +1,4 @@
+	SELECT C.Name, P.Name
+	FROM [SalesLT].[ProductCategory] AS C
+	JOIN [SalesLT].[Product] AS P
+	ON P.ProductCategoryID=C.ProductCategoryID;

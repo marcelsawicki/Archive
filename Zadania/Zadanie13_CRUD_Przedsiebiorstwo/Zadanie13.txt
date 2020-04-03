@@ -1,0 +1,14 @@
+Zadanie 13.
+Program w języku C#. Projekt w .NET Core - (ASP.NET Core Web Application, template: API) 
+
+(uwaga! domyslnie uzywany jest ASP.NET Core 3.1)
+
+Docelowo program bedzie wdrozony do Azure jako: "Web App + SQL". 
+Dla ułatwienia można rozpocząć pisanie programu używając bazy danych na localhost.
+
+[zadanie13-diagram-klas_projekt.jpg]
+
+Dla przedstawionego diagramu klas napisać CRUD w języku C#, następnie wdrożyć ten serwis do Azure.
+(poczytać na temat: dependency injection)
+
+Odpytac serwis programem Postman i używając biblioteki MSTest przetestowac jedna dowolna metode kontrolera.

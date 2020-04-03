@@ -1,0 +1,13 @@
+Zadanie 7. (tresc zadania wymaga poprawy)
+
+Pobrac template listy SharePoint i utworzyc na jej podstawie druga liste do archiwizacji itemow o nazwie Explorer1Archive.
+
+Napisać skrypt SharePoint do przenoszenia itemów (archiwizacji) z listy Explorer1 do listy Explorer1Archive, skrypt powinen takze wygenerować raport
+o poprawnym przeniesieniu itemów do pliku CSV (w pliku powinny znaleźć się informacje takie jak: nazwa item'a, data utworzenia, data przeniesienia, 
+z jakiej listy przenisono item oraz na jaka liste zostal zapisany).
+
+Utworzyć 5 nowych site collection w SharePoint Online, napisać skrypt w PowerShell tworzący listę z informacjami o tych
+kolekcjach witryn w pliku CSV. Zapisane informacje to: Title, Modified by, Created by.
+
+
+https://collab365.community/sp2016-o365-sp-movecopyutil-javascript-copy-move-files-and-folder/

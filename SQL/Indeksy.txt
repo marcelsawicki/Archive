@@ -1,0 +1,21 @@
+Indeksy organizuja dane w sposob umozliwiajacy ich wydajne odczytywanie i modyfikowanie.
+Chociaz bez indeksow serwery bazodanowe tez sa w stanie odczytac wszystkie dane wymagane
+do wykonania instrukcji SQL, to indeksy wielokrotnie skracaja czas takich operacji.
+
+Budowa i dzialanie indeksow zaleza od konkretnego serwera bazodanowego.
+
+W serwerze SQL wiersze tabel moga byc przechowywane na dwa sposoby:
+1. W postaci sterty (ang. Heap), czyli nieupozadkowanego, nieposortowanego zbioru.
+2. W postaci uporzadkowanej struktury, z reguly drzewa zrownowazonego (ang. B-tree).
+	W takim przypadku wiersze sa posortowane wedlug klucza indeksu zgrupowanego (ang. Clustered).
+	Indeks zgrupowany mozna porownac do ksiazki telefonicznej, ktorej cala zawartosc jest 
+	posortowana alfabetycznie wedlug nazwisk (klucza indeksu). Dzieki temu, gdy chcemy znalezc
+	numer telefonu, wystarczy, ze wyszukamy strone (lub strony), na ktorej znajduja sie dane
+	osob o szukanym nazwisku.
+	
+Ponadto dla kazdej tabeli mozna utworzyc wiele indeksow dodatkowych (z reguly gorny limit
+serwera wielokrotnie przekracza potrzeby - pojedyncza tabela  powinna miec od kilku do
+kilkunastu indeksow dodatkowych).
+
+Indeks tego typu mozna porownac do skorowidza ksiazki - znajduja sie w nim posortowane
+hasla i odnosniki do stron, na ktorych zostaly one opisane.
