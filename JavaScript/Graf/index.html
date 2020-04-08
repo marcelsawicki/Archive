@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Filtry</title>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.219/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.219/styles/kendo.blueopal.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.219/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.219/styles/kendo.blueopal.min.css" />
+
+	<script src="https://kendo.cdn.telerik.com/2020.1.219/js/kendo.all.min.js"></script>
+
+</head>
+<body>
+	<div id="grid"></div>
+	<div id="info"></div>
+	
+	<img src='graf.png'></img>
+
+	<script>
+					var message = document.getElementById('info');
+					var moveMap =[
+									[0,0,0,0],
+									[2,0,0,0],
+									[3,1,0,5],
+									[4,2,6,0],
+									[0,3,0,0],
+									[0,0,2,0],
+									[7,8,0,3],
+									[0,6,0,0],
+									[6,0,0,0]
+									];
+					var Keys = {
+						UP: 38,
+						DOWN: 40,
+						LEFT: 37,
+						RIGHT: 39
+					}
+			 
+                    var currentNode = function(node, direction) {
+						this.node = node;
+						this.direction = direction;
+					}
+					
+					var cNode = new currentNode(1,moveMap[1]);
+								
+					var logKey = function(e)
+					{
+						switch(e.keyCode) {
+							case Keys.UP:
+									if(cNode.direction[0]!=0)
+									{
+										cNode.node = cNode.direction[0];
+										cNode.direction = moveMap[cNode.node];
+										console.log('Current node:' +cNode.node);
+										message.innerText = cNode.node;
+
+									}
+									break;
+							case Keys.DOWN:
+									if(cNode.direction[1]!=0)
+									{
+										cNode.node = cNode.direction[1];
+										cNode.direction = moveMap[cNode.node];
+										console.log('Current node:' +cNode.node);
+										message.innerText = cNode.node;
+									}
+									break;
+							case Keys.LEFT:
+									if(cNode.direction[2]!=0)
+									{
+										cNode.node = cNode.direction[2];
+										cNode.direction = moveMap[cNode.node];
+										console.log('Current node:' +cNode.node);
+										message.innerText = cNode.node;
+									}
+									break;
+							case Keys.RIGHT:
+									if(cNode.direction[3]!=0)
+									{
+										cNode.node = cNode.direction[3];
+										cNode.direction = moveMap[cNode.node];
+										console.log('Current node:' +cNode.node);
+										message.innerText = cNode.node;
+
+									}
+									break;
+						}
+					
+					}
+
+			document.addEventListener('keydown', logKey);		
+			
+	</script>
+</body>
+</html>

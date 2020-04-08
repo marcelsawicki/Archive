@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>Filtry</title>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.219/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.219/styles/kendo.blueopal.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.219/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.1.219/styles/kendo.blueopal.min.css" />
+
+	<script src="https://kendo.cdn.telerik.com/2020.1.219/js/kendo.all.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div id="color"></div>
+	<div id="grid"></div>
+
+	<script>
+	         $(document).ready(function() {
+			 
+                    var data = [
+						{ text: "All", value: "1" },
+                        { text: "Black", value: "1" },
+                        { text: "Orange", value: "2" },
+                        { text: "Grey", value: "3" }
+                    ];
+					var onChange = function(e) {
+					
+						console.log(e); // break point
+					
+						var grid = $("#grid").data("kendoGrid");
+						if(this.dataItem().text!="All")
+						{
+							grid.dataSource.filter( { field: "ContactName", operator: "startswith", value: this.dataItem().text });
+						}
+						else
+						{
+							grid.dataSource.filter({});
+						}
+						
+					};
+             
+					// create DropDownList from input HTML element
+                    $("#color").kendoDropDownList({
+                        dataTextField: "text",
+                        dataValueField: "value",
+                        dataSource: data,
+                        index: 0,
+                        change: onChange
+                    });
+					
+					$("#grid").kendoGrid({
+                dataSource: {
+					data: [{"ContactName":"Black","ContactTitle":"sddssdsd","CompanyName":"dssdsd","Country":"Fin"},
+					{"ContactName":"Orange","ContactTitle":"sddssdsd","CompanyName":"dssdsd","Country":"Fin"},
+					{"ContactName":"Grey","ContactTitle":"zxsd","CompanyName":"dssdsd","Country":"Fin"}]
+                },
+                height: 550,
+                groupable: true,
+                sortable: true,
+                pageable: {
+                    refresh: true,
+                    pageSizes: true,
+                    buttonCount: 5
+                },
+                columns: [{
+                    field: "ContactName",
+                    title: "Contact Name",
+                    width: 240
+                }, {
+                    field: "ContactTitle",
+                    title: "Contact Title"
+                }, {
+                    field: "CompanyName",
+                    title: "Company Name"
+                }, {
+                    field: "Country",
+                    width: 150
+                }]
+            });
+        });
+					
+	</script>
+</body>
+</html>
