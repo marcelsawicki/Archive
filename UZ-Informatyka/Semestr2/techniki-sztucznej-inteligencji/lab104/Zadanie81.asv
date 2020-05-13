@@ -1,0 +1,5 @@
+% Korzystajac z funkcji ezplot i narysowac wykresy funkcji liniowej 
+% oraz unipolarnego oraz bipolarnego skoku jednostkowego w przedziale
+% domknietym <-1,1>.
+
+ffplot('x^2 + y^2 - 4')

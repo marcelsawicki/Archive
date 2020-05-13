@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="webjars/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{js/main.js}" src="../static/js/main.js"></script>
+<link rel="stylesheet" href="webjars/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
+</head>
+<body>
+CRUD:
+<br />
+<td> <a href="/usr/" class="btn btn-primary eBtn">App_User</a> </td>
+<br />
+<br />
+<td> <a href="/dept" class="btn btn-primary eBtn">Department</a> </td>
+<br />
+<br />
+Funkcjonalnosc dla działu ksiegowego: <br />
+<br />
+<br />
+	 Zadanie 3: a) zsumowanie rocznych wyplad dla dzialu (DEPARTAMENT_NAME)
+	 <br /> 
+	<a href="/sumyearsalaryfront/wdrozenia" class="btn btn-primary eBtn">dzial: wdrozenia</a>
+	<br />
+	<br />
+	 Zadanie 3: b) zsumowanie rocznych wyplad dla osoby
+	 <br /> 
+	<a href="/sumyearsalaryfront/Zygmunt/Kowalski" class="btn btn-primary eBtn">pracownik: Zygmunt Kowalski, roczna pensja</a>
+	<br />
+	<br />
+	Zadanie 3: c) miesieczne podatki od wynagrodzen dla firmy, dla przekazanej jako parametr  wysokosci (procentowej) podatku
+	<br />
+<a href="/gettaxfront/sprzedaz/23" class="btn btn-primary eBtn">dzial: sprzedaz, podatek: 23</a>
+<br />
+</body>
+</html>

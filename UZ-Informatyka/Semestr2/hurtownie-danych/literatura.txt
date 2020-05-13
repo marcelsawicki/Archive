@@ -1,0 +1,17 @@
+Literatura podstawowa
+1. Hand D., Mannila H., Smyth P.: Eksploracja danych, WNT, Warszawa, 2005.
+2. Jarke M., Lenzerini M., Vassiliou Y., Vassiliadis P.: Hurtownie danych. Podstawy organizacji i funkcjonowania, WSiP, Warszawa, 2003.
+3. Larose D.T.: Odkrywanie wiedzy z danych. Wprowadzenie do eksploracji danych, PWN, Warszawa, 2006.
+4. Larose D.T.: Metody i modele eksploracji danych, PWN, Warszawa, 2008.
+5. Morzy T.: Eksploracja danych. Metody i algorytmy, PWN, Warszawa, 2013.
+
+Literatura uzupelniajaca
+1. Rutkowski L.: Metody i techniki sztucznej inteligencji, PWN, Warszawa, 2005.
+2. Ch. Todman: Projektowanie hurtowni danych, Wydawnictwo Naukowo – Techniczne, Warszawa, 2003.
+3. M. Nycz: Pozyskiwanie wiedzy i zarzadzanie wiedza, Wydawnictwo Akademii Ekonomicznej im. Oskara Langego, Wroclaw, 2003.
+4. Barbara Smok: Eksploracja danych w procesie pozyskiwania wiedzy z hurtowni danych, Prace naukowe Akademii Ekonomicznej we Wroclawiu, 2003.
+5. Miczulski W., Szulim R.:Using time series approximation methods in the modelling of industrial objects and processes. Measurements models systems and design / 
+    ed. by J. Korbicz .- Warszawa : Wydawnictwo Komunikacji i Lacznosci, 2007 - s. 157--174.
+
+6. Miczulski W., Sobolewski L.: Algorithm for Predicting [UTC–UTC(k)] by Means of Neural Networks, IEEE TRANSACTIONS ON INSTRUMENTATION AND MEASUREMENT,
+    8/2017, s. 2136 - 2142.

@@ -1,0 +1,15 @@
+Literatura podstawowa
+Stevens W.R.: UNIX. Programowanie uslug sieciowych. Tom 1 - API: gniazda i XTI; Wydawnictwa Naukowo-Techniczne, 2000.   
+Coulouris  G.,  Dollimore  J.,  Kindberg  T.:  Systemy  rozproszone.  Podstawy  i projektowanie, Wydawnictwa Naukowo-Techniczne, 1999.   
+Harold  E.  R.,  Java  Network  Programming,  4th  Edition,  Developing  Networked  Applications. O'Reilly, 2013 
+Literatura uzupelniajaca
+Horstmann C. S., Cornell G.: Java. Podstawy. Wydanie IX, Helion, 2013. 
+Horstmann  C.  S.,  Cornell  G.:  Java.  Techniki  zaawansowane.  Wydanie  IX,  Helion, 2013. 
+The Java Tutorial / ORACLE. 
+The Java EE Tutorial / ORACLE. 
+Stevens  W.R:  TCP/IP.  Tom  1:  Protokoly  -  Biblia;  Oficyna  Wydawnicza  READ  ME, 1998. 
+Comer D. E., Sieci komputerowe i intersieci. Wydanie V, Helion, 2012. 
+Rychlicki-Kicior K., Java EE 6. Programowanie aplikacji WWW, Helion, 2012. 
+Erl, Th., SOA., Koncepcje, technologie i projektowanie, 2014.
+Rotem-Gal-Oz A., Wzorce SOA, Helion, 2013
+Sharma S., Mikrouslugi w Javie. Poradnik eksperta, Helion, 2017

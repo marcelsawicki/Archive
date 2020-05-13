@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<script type="text/javascript" src="../webjars/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="../webjars/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{../js/mainusr.js}" src="../../static/js/mainusr.js"></script>
+<link rel="stylesheet" href="../webjars/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
+</head>
+<body>
+
+	<div class="container2">
+	<button class="btn btn-success nBtn">New</button>
+		<div class="card">
+			<div class="card-block">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>department</th>
+						<th>Username</th>
+						<th>password</th>
+						<th>firstName</th>
+						<th>lastName</th>
+						<th>description</th>
+						<th>pay</th>
+						<th>bonus</th>
+						<th>dayOfPayment</th>
+					</tr>
+				</thead> 
+				<tbody>
+					<tr th:each="app_user :${data.content}">
+					<td th:text="${app_user.id}"></td>
+					<td th:text="${app_user.department}"></td>
+					<td th:text="${app_user.username}"></td>
+					<td th:text="${app_user.password}"></td>
+					<td th:text="${app_user.firstName}"></td>
+					<td th:text="${app_user.lastName}"></td>
+					<td th:text="${app_user.description}"></td>
+					<td th:text="${app_user.pay}"></td>
+					<td th:text="${app_user.bonus}"></td>
+					<td th:text="${app_user.dayOfPayment}"></td>
+					<td> <a th:href="@{/usr/deleteusr/(id=${app_user.id})}" class="btn btn-danger delUsrBtn">Delete</a> </td>
+					<td> <a th:href="@{/usr/findOneusr/(id=${app_user.id})}" class="btn btn-primary eUsrBtn">Edit</a> </td>
+					</tr>
+				</tbody>
+			</table>
+			<hr />
+			<ul class="nav nav-pills">
+				<li class="nav-item" th:each="i :${#numbers.sequence(0,data.totalPages-1)}">
+				<a th:href="@{/usr/(page=${i})}" th:text="${i}" class="nav-link"
+				th:classappend="${currentPage}==${i}?'active':''"></a>
+				</li>
+			</ul>
+			</div>
+		</div>
+		
+		
+		<div class="myForm">
+			<form th:action="@{/usr/saveusr}" method="post">
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Update or create</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+								
+							<div class="form-group">
+								<label for="id" class="col-form-label">ID:</label>
+								<input type="text" class="form-control" id="id" name="id" value="" />
+							</div>
+							<div class="form-group">
+								<label for="name" class="col-form-label">Department:</label>
+								<input type="text" class="form-control" id="department" name="department" value="" />
+							</div>
+							
+							<div class="form-group">
+								<label for="name" class="col-form-label">username:</label>
+								<input type="text" class="form-control" id="username" name="username" value="" />
+							</div>
+							<div class="form-group">
+								<label for="name" class="col-form-label">password:</label>
+								<input type="text" class="form-control" id="password" name="password" value="" />
+							</div>
+							<div class="form-group">
+								<label for="name" class="col-form-label">firstName:</label>
+								<input type="text" class="form-control" id="firstName" name="firstName" value="" />
+							</div>
+							<div class="form-group">
+								<label for="name" class="col-form-label">lastName:</label>
+								<input type="text" class="form-control" id="lastName" name="lastName" value="" />
+							</div>
+							<div class="form-group">
+								<label for="name" class="col-form-label">description:</label>
+								<input type="text" class="form-control" id="description" name="description" value="" />
+							</div>
+							<div class="form-group">
+								<label for="name" class="col-form-label">pay:</label>
+								<input type="text" class="form-control" id="pay" name="pay" value="" />
+							</div>
+							<div class="form-group">
+								<label for="name" class="col-form-label">bonus:</label>
+								<input type="text" class="form-control" id="bonus" name="bonus" value="" />
+							</div>
+							<div class="form-group">
+								<label for="name" class="col-form-label">dayOfPayment:</label>
+								<input type="text" class="form-control" id="dayOfPayment" name="dayOfPayment" value="" />
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<input type="submit" class="btn btn-primary" value="Save" />
+						</div>
+						</div>
+					</div>
+					</div>
+					
+					</form>
+			</div>
+			
+<div class="modal fade" id="myModalusr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="alert alert-danger"> 
+        	Are you sure you want to delete?
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="" type="button" class="btn btn-danger" id="delRef">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+			<a href="/" class="btn btn-success eBtn">powrot do menu</a>
+</body>
+</html>

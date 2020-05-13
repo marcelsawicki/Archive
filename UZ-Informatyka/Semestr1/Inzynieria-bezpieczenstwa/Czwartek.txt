@@ -1,0 +1,9 @@
+1. Sila hasel - metody wyznaczania miar entropijnych
+2. Zabezpieczenia dostepu zasobu
+3. Standardowy scenariusz ataku na system teleinformatyczny i mechanizmy obrony
+4. Przykladowa polityka tworzenia i zarzadzania kopiami zapasowymi w srednich/duzych firmach
+5. Deduplikacja danych
+7. Dwustopniowa autentykacja - co to jest jak dziala i gdzie jest stosowana?
+8. Porównanie kryptograficznych algorytmów symetrycznych i asymetrycznych
+9. Zasada Kerchoffa
+10. Kryptoanaliza

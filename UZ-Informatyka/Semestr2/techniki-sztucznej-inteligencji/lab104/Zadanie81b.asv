@@ -1,0 +1,13 @@
+%x = [ -2 -1 0 1 2];
+y = 5;
+x=1;
+
+function y=skokowa(x)
+begin
+if x==0 || x<0
+    y=0;
+elseif x>0
+    y=1;
+end
+
+fplot(@(y) y)

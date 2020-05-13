@@ -1,0 +1,8 @@
+1. Różnica między średnią modalną, medianą, arytmetyczną.
+2. Co to jest rozstęp?
+3. Co to jest wariancja, odchylenie standardowe?
+4. Co to są kwartyle: pierwszy kwartyl, drugi kwartyl, trzeci kwartyl?
+5. Co to jest rozstęp międzykwartylowy?
+6. Co to są percentyle?
+7. Jak rozpoznajemy obserwacje odstające?
+8. Którymi parametrami określamy np. rozrzut?

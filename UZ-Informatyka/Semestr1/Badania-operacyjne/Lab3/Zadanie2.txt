@@ -1,0 +1,60 @@
+2. Metodą przeglądu rozwiązańbazowych znaleźć minimum funkcji:
+z = -3*x1 - 4*x2
+
+przy ograniczeniach
+
+ x1 +   x2 	<= 20
+-x1 + 4*x2  <= 20
+ x1 		>= 10
+	    x2 	>= 5
+		
+Jesli chce zmniejszyc liczbe niewiadomych to podstawiam:
+
+zamiast x1 wstawiam:
+x1'
+
+ponieważ:
+
+x1 >= 10
+to 
+x1 - 10 >= 0
+
+zatem: 
+x1' = x1 - 10
+
+
+zamiast x2 wstawiam
+x2'
+
+ponieważ
+x2 >= 5
+to
+x2 - 5 >= 0
+zatem:
+x2' = x2 - 5
+
+
+Podstawiam to i otrzymuje
+
+funkcja celu:
+
+z = -3*x1' - 4*x2' - 3*10 - 4*5 = -3*x1' - 4*x2' - 30 - 20 = -3*x1' - 4*x2' - 50
+
+ograniczenia:
+
+x1' + x2' <= 20 - 10 - 5
+-x1' + 4*x2' <= 20 + 10 - 4*5
+x1' >= 10 - 10
+x2' >= 5-5
+
+zatem otrzymuje:
+
+ x1' +   x2' 	<= 5
+-x1' + 4*x2' 	<= 10
+ x1' 			>= 0
+		 x2'	>= 0
+		 
+		 
+A = [1,1;-1,4]
+b = [5;0]
+c = [-3,-4]
