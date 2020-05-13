@@ -1,0 +1,25 @@
+W ramach programu wykonanego z u¿yciem Java Spring Boot dostêpnê bêd¹ nastêpuj¹ce widoki:
+
+a) Widok: Pracownik
+
+    - historia urlopów
+
+    - wypisanie urlopu
+
+
+b) Widok: Zatwierdzaj¹cy
+
+    - urlopy oczekujace do zatwierdzenia
+
+    - historia wszystkich zatwierdzonych i odrzuconych urlopów
+
+
+G³ówn¹ funkcjonalnoœci¹ programu bêdzie obieg wniosku urlopowego, polegajacy na wypisaniu urlopu przez pracownika a nastepnie zatwierdzeniu b¹dŸ odrzuceniu przez kierownika dzia³u. Urlop bêdzie przyjomowa³ status: oczekuje, zatwierdzony lub odrzucony.
+
+Po zaakceptowaniu urlopu przez kierownika departamentu, odjêta zostanie iloœæ przys³uguj¹cego urlopu pracownikowi w danym roku.
+
+Program zostanie napisany w Java Spring Boot.
+
+Postêp prac nad programem bêdzie widoczny w repozytorium:
+
+https://github.com/marcelsawicki/program-kadrowy

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<script type="text/javascript" src="../webjars/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="../webjars/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{../js/mainpracownik.js}" src="../../static/js/mainpracownik.js"></script>
+<link rel="stylesheet" href="../webjars/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+	<div class="container2">
+	<button class="btn btn-success nBtn">Nowy pracownik</button>
+		<div class="card">
+			<div class="card-block">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Imie</th>
+						<th>Nazwisko</th>
+					</tr>
+				</thead> 
+				<tbody>
+					<tr th:each="pracownik :${data.content}">
+					<td th:text="${pracownik.id}"></td>
+					<td th:text="${pracownik.name}"></td>
+					<td th:text="${pracownik.surname}"></td>
+					<td> <a th:href="@{/pracownik/deletepracownik/(id=${pracownik.id})}" class="btn btn-danger delPracownikBtn">Kasuj</a> </td>
+					<td> <a th:href="@{/pracownik/findOnepracownik/(id=${pracownik.id})}" class="btn btn-primary ePracownikBtn">Edytuj</a> </td>
+					</tr>
+				</tbody>
+			</table>
+			<hr />
+			<ul class="nav nav-pills">
+				<li class="nav-item" th:each="i :${#numbers.sequence(0,data.totalPages-1)}">
+				<a th:href="@{/pracownik/(page=${i})}" th:text="${i}" class="nav-link"
+				th:classappend="${currentPage}==${i}?'active':''"></a>
+				</li>
+			</ul>
+			</div>
+		</div>
+		
+			<a href="/" class="btn btn-warning eBtn">Powrot do menu</a>
+			
+		<div class="formPracownik">
+			<form th:action="@{/pracownik/savepracownik}" method="post">
+			<div class="modal fade" id="edycjaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Pracownik</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+					
+							<div class="form-group">
+								<label for="id" class="col-form-label">ID:</label>
+								<input type="text" class="form-control" id="id" name="id" value="" />
+							</div>
+							<div class="form-group">
+								<label for="name" class="col-form-label">Imie:</label>
+								<input type="text" class="form-control" id="name" name="name" value="" />
+							</div>
+							<div class="form-group">
+								<label for="name" class="col-form-label">Nazwisko:</label>
+								<input type="text" class="form-control" id="surname" name="surname" value="" />
+							</div>
+							
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<input type="submit" class="btn btn-primary" value="Save" />
+						</div>
+						</div>
+					</div>
+					</div>
+					
+					</form>
+			</div>
+			
+<div class="modal fade" id="deleteModalPracownik" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pracownik</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="alert alert-danger"> 
+        	Czy na pewno chcesz usunac?
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+        <a href="" type="button" class="btn btn-danger" id="delRef">Kasuj</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

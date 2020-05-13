@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<script type="text/javascript" src="../webjars/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="../webjars/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{../js/mainurlopydoakceptacji.js}" src="../../static/js/mainurlopydoakceptacji.js"></script>
+<link rel="stylesheet" href="../webjars/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+	<div class="container1">
+		<div class="card">
+			<div class="card-block">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>name</th>
+						<th>Imie</th>
+						<th>Nazwisko</th>
+						<th>status</th>
+						<th>Od kiedy</th>
+						<th>Do kiedy</th>
+					</tr>
+				</thead> 
+				<tbody>
+					<tr th:each="wniosekurlopowy :${data.content}">
+					<td th:text="${wniosekurlopowy.id}"></td>
+					<td th:text="${wniosekurlopowy.name}"></td>
+					<td th:text="${wniosekurlopowy.pracownik?.name}"></td>
+					<td th:text="${wniosekurlopowy.pracownik?.surname}"></td>
+					<td th:text="${wniosekurlopowy.status}"></td>
+					<td th:text="${wniosekurlopowy.odkiedy}"></td>
+					<td th:text="${wniosekurlopowy.dokiedy}"></td>
+					<td> <a th:href="@{/wniosekurlopowy/odrzucwniosekurlopowy/(id=${wniosekurlopowy.id})}" class="btn btn-danger delWniosekUrlopowyBtn">Odrzuc</a> </td>
+					<td> <a th:href="@{/wniosekurlopowy/akceptujwniosekurlopowy/(id=${wniosekurlopowy.id})}" class="btn btn-primary eWniosekUrlopowyBtn">Akceptuj</a> </td>
+					</tr>
+				</tbody>
+			</table>
+			<hr />
+			<ul class="nav nav-pills">
+				<li class="nav-item" th:each="i :${#numbers.sequence(0,data.totalPages-1)}">
+				<a th:href="@{/urlopydoakceptacji/(page=${i})}" th:text="${i}" class="nav-link"
+				th:classappend="${currentPage}==${i}?'active':''"></a>
+				</li>
+			</ul>
+			</div>
+		</div>
+		
+		<a href="/" class="btn btn-warning eBtn">Powrot do menu</a>
+		
+</body>
+</html>

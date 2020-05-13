@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="webjars/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{js/main.js}" src="../static/js/main.js"></script>
+<link rel="stylesheet" href="webjars/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/style.css" />
+
+</head>
+<body>
+MENU:
+
+<table class="table">
+  <thead class="thead">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Opcja</th>
+      <th scope="col">Rola</th>
+      <th scope="col">Opis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><a href="/wniosekurlopowy/" class="btn btn-primary eBtn">Wniosek urlopowy</a></td>
+      <td>Pracownik</td>
+      <td>Wypisywanie nowych urlopow oraz lista wszystkich urlopow</td>
+    </tr>
+     <tr>
+      <th scope="row">2</th>
+      <td>  <a href="/urlopydoakceptacji" class="btn btn-primary eBtn">Akceptacja urlopow</a></td>
+      <td>Kierownik</td>
+      <td>Akceptowanie lub odrzucanie wnioskow urlopowych</td>
+    </tr>
+        <tr>
+      <th scope="row">3</th>
+      <td><a href="/departament/" class="btn btn-warning eBtn">Departament</a></td>
+      <td>Administrator</td>
+      <td>Dodawanie lub usuwanie dzialu. Edytowanie dzialu. </td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td><a href="/pracownik/" class="btn btn-warning eBtn">Pracownik</a></td>
+      <td>Administrator</td>
+      <td>Dodawanie, usuwanie lub edytowanie danych pracownika</td>
+    </tr>
+  </tbody>
+  
+</table>
+
+</body>
+</html>
