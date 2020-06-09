@@ -1,0 +1,146 @@
+{ Prad I[A] }
+{ Prad, Budynek 1 - ksztalt wykresu piloksztaltny }
+IF(Ib1 <= 15) AND (Pb1.HiLimit==0) THEN
+Ib1=Ib1 + 1;
+ELSE
+Ib1=Ib1 - 1;
+	IF(Ib1==0) THEN
+		Pb1.HiLimit=0;
+	ELSE
+		Pb1.HiLimit=1;
+	ENDIF;
+ENDIF;
+
+{ Prad, Budynek 2 - ksztalt wykresu piloksztaltny }
+IF(Ib2 <= 20) AND (Pb2.HiLimit==0) THEN
+Ib2=Ib2 + 1;
+ELSE
+Ib2=Ib2 - 1;
+	IF(Ib2==0) THEN
+		Pb2.HiLimit=0;
+	ELSE
+		Pb2.HiLimit=1;
+	ENDIF;
+ENDIF;
+
+
+{ Prad, Budynek 3 - ksztalt wykresu piloksztaltny }
+IF(Ib3 <= 25) AND (Pb3.HiLimit==0) THEN
+Ib3=Ib3 + 1;
+ELSE
+Ib3=Ib3 - 1;
+	IF(Ib3==0) THEN
+		Pb3.HiLimit=0;
+	ELSE
+		Pb3.HiLimit=1;
+	ENDIF;
+ENDIF;
+
+{ Prad, Budynek 4 - ksztalt wykresu piloksztaltny }
+IF(Ib4 <= 25) AND (Pb4.HiLimit==0) THEN
+Ib4=Ib4 + 1;
+ELSE
+Ib4=Ib4 - 1;
+	IF(Ib4==0) THEN
+		Pb4.HiLimit=0;
+	ELSE
+		Pb4.HiLimit=1;
+	ENDIF;
+ENDIF;
+
+
+{ Napiecie U[V] }
+{ Napiecie , Budynek 1 - ksztalt wykresu piloksztaltny }
+IF(Ub1 <= 250) THEN
+Ub1=Ub1+1;
+ELSE
+Ub1=200;
+ENDIF;
+
+{ Napiecie, Budynek 2 - ksztalt wykresu piloksztaltny }
+IF(Ub2 <= 250) THEN
+Ub2=Ub2+1;
+ELSE
+Ub2=200;
+ENDIF;
+
+
+{ Napiecie, Budynek 3 - ksztalt wykresu piloksztaltny }
+IF(Ub3 <= 250) THEN
+Ub3=Ub3+1;
+ELSE
+Ub3=200;
+ENDIF;
+
+{ Napiecie, Budynek 4 - ksztalt wykresu piloksztaltny }
+IF(Ub4 <= 250) THEN
+Ub4=Ub4+1;
+ELSE
+Ub4=200;
+ENDIF;
+
+
+{ Moc P[kW] }
+{ Moc, Budynek 1 - ksztalt wykresu piloksztaltny }
+IF(Pb1 <= 600) THEN
+Pb1=Ub1*Ib1;
+Pb1=Pb1/1000;
+ELSE
+Pb1=0;
+ENDIF;
+
+{ Moc, Budynek 2 - ksztalt wykresu piloksztaltny }
+IF(Pb2 <= 600) THEN
+Pb2=Ub2*Ib2;
+Pb2=Pb2/1000;
+ELSE
+Pb2=0;
+ENDIF;
+
+
+{ Moc, Budynek 3 - ksztalt wykresu piloksztaltny }
+IF(Pb3 <= 600) THEN
+Pb3=Ub3*Ib3;
+Pb3=Pb3/1000;
+ELSE
+Pb3=0;
+ENDIF;
+
+{ Moc, Budynek 4 - ksztalt wykresu piloksztaltny }
+IF(Pb4 <= 600) THEN
+Pb4=Ub4*Ib4;
+Pb4=Pb4/1000;
+ELSE
+Pb4=0;
+ENDIF;
+
+
+{ Przeplyw H[l/min] }
+{ Przeplyw, Budynek 1 - ksztalt wykresu piloksztaltny }
+IF(Hb1 <= 60) THEN
+Hb1=Hb1+1;
+ELSE
+Hb1=0;
+ENDIF;
+
+{ Przeplyw, Budynek 2 - ksztalt wykresu piloksztaltny }
+IF(Hb2 <= 70) THEN
+Hb2=Hb2+1;
+ELSE
+Hb2=0;
+ENDIF;
+
+
+{ Przeplyw, Budynek 3 - ksztalt wykresu piloksztaltny }
+IF(Hb3 <= 80) THEN
+Hb3=Hb3+1;
+ELSE
+Hb3=0;
+ENDIF;
+
+{ Przeplyw, Budynek 4 - ksztalt wykresu piloksztaltny }
+IF(Hb4 <= 90) THEN
+Hb4=Hb4+1;
+ELSE
+Hb4=0;
+ENDIF;
