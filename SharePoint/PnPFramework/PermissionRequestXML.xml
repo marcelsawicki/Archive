@@ -1,0 +1,3 @@
+<AppPermissionRequests AllowAppOnlyPolicy="true">
+       <AppPermissionRequest Scope="http://datacrafter2.sharepoint.com" Right="FullControl" />
+</AppPermissionRequests>

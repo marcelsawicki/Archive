@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD>
+    <meta charset="UTF-8">
+    <title>Platformer</title>
+    <script src="scripts/engine.js"></script>
+    <script>
+        var Keys = {
+            getDown: [],
+            UP: 38,
+            DOWN: 40,
+            LEFT: 37,
+            RIGHT: 39,
+            C: 67
+        }
+        window.onload = function() {
+        }
+    </script>
+</HEAD>
+<BODY>
+    <canvas id="myCanvas" width="300" height="300" style="border: 1px solid black;">
+        Twoja przegldarka nie obsuguje zncznika canvas.
+    </canvas>
+    <script>
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+
+            // Inicjuje tablice duszkow
+            var spritesheet = ['img/char1.png','img/char2.png','img/char3.png']
+            var currentHero = 0;
+
+            // Wczytuje obrazy duszkow
+            var image1 = new Image(64,64);
+            image1.src = 'char1.png';
+            image1.addEventListener('load', function() {
+            // execute drawImage statements here
+            ctx.drawImage(image1,64,64)
+            }, false);
+            
+    </script>
+</BODY>
+</HTML>

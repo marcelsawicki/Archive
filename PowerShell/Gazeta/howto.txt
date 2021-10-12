@@ -1,0 +1,4 @@
+[PowerShell]
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+https://docs.microsoft.com/pl-pl/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-6

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CharakterystykaUpraw>
+	<RoslinaUprawna>
+		<Nazwa> Banan </Nazwa>
+		<Opis> zastosowanie: owoce. maka, alkohol </Opis>
+		<Producenci>
+			<Producent>
+				<Kraj> Indie </Kraj>
+				<Udzial> 28.2 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Chiny </Kraj>
+				<Udzial> 9.1 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Filipiny </Kraj>
+				<Udzial> 8.6 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Ekwador </Kraj>
+				<Udzial> 7.5 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Brazylia </Kraj>
+				<Udzial> 6.6 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Indonezja </Kraj>
+				<Udzial> 5.5 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Tanzania </Kraj>
+				<Udzial> 3.0 </Udzial>
+			</Producent>
+		</Producenci>
+	</RoslinaUprawna>
+
+	<RoslinaUprawna>
+		<Nazwa> Ziemniak </Nazwa>
+		<Opis> zastosowanie: bulwy, maka, pasza, alkohol </Opis>
+		<Producenci>
+			<Producent>
+				<Kraj> Chiny </Kraj>
+				<Udzial> 23.1 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Indie </Kraj>
+				<Udzial> 11.3 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Rosja </Kraj>
+				<Udzial> 6.5 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Ukraina </Kraj>
+				<Udzial> 5.8 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Stany Zjednoczone </Kraj>
+				<Udzial> 5.6 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Niemcy </Kraj>
+				<Udzial> 3.1 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Polska </Kraj>
+				<Udzial> 2.5 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Bangladesz </Kraj>
+				<Udzial> 2.4 </Udzial>
+			</Producent>
+			<Producent>
+				<Kraj> Bialorus </Kraj>
+				<Udzial> 2.4 </Udzial>
+			</Producent>
+		</Producenci>
+	</RoslinaUprawna>
+</CharakterystykaUpraw>
