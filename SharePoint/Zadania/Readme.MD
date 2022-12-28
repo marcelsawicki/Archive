@@ -92,7 +92,7 @@ Program w języku C#. Projekt w .NET Core - (ASP.NET Core Web Application, templ
 
 Docelowo program bedzie wdrozony do Azure jako: "Web App + SQL". 
 Dla ułatwienia można rozpocząć pisanie programu używając bazy danych na localhost.  
-![Zadanie 5 Diagram klas](./images/diagram-klas-zad5.jpg)
+![Zadanie 5 Diagram klas](./images/uml.jpg)
 
 [diagram-klas-zad3.jpg]
 
