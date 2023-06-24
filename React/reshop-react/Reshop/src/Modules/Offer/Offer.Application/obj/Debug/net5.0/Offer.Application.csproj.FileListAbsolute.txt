@@ -1,0 +1,12 @@
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\bin\Debug\net5.0\Offer.Application.deps.json
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\bin\Debug\net5.0\Offer.Application.dll
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\bin\Debug\net5.0\Offer.Application.pdb
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\obj\Debug\net5.0\Offer.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\obj\Debug\net5.0\Offer.Application.AssemblyInfoInputs.cache
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\obj\Debug\net5.0\Offer.Application.AssemblyInfo.cs
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\obj\Debug\net5.0\Offer.Application.csproj.CoreCompileInputs.cache
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\obj\Debug\net5.0\Offer.Application.dll
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\obj\Debug\net5.0\ref\Offer.Application.dll
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\obj\Debug\net5.0\Offer.Application.pdb
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\obj\Debug\net5.0\Offer.Application.csproj.AssemblyReference.cache
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Offer\Offer.Application\obj\Debug\net5.0\refint\Offer.Application.dll

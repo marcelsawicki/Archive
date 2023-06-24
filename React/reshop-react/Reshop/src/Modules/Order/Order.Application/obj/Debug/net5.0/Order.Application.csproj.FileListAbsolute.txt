@@ -1,0 +1,12 @@
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\bin\Debug\net5.0\Order.Application.deps.json
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\bin\Debug\net5.0\Order.Application.dll
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\bin\Debug\net5.0\Order.Application.pdb
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\obj\Debug\net5.0\Order.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\obj\Debug\net5.0\Order.Application.AssemblyInfoInputs.cache
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\obj\Debug\net5.0\Order.Application.AssemblyInfo.cs
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\obj\Debug\net5.0\Order.Application.csproj.CoreCompileInputs.cache
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\obj\Debug\net5.0\Order.Application.dll
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\obj\Debug\net5.0\ref\Order.Application.dll
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\obj\Debug\net5.0\Order.Application.pdb
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\obj\Debug\net5.0\Order.Application.csproj.AssemblyReference.cache
+C:\Repo\WebShop\Reshop\Reshop\src\Modules\Order\Order.Application\obj\Debug\net5.0\refint\Order.Application.dll
